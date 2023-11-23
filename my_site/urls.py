@@ -1,5 +1,5 @@
 """
-URL configuration for my_site project.
+URL configuration for palos_site project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -21,13 +21,9 @@ from main_app import views
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('shop', views.shop, name="shop"),
+    path('services', views.services, name="services"),
     path('about', views.about, name="about"),
     path('contact', views.contact, name="contact"),
     path('faq', views.faq, name="faq"),
     path('admin/', admin.site.urls),
-
 ]
-
-#members
-#members/csxdd

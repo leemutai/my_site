@@ -1,76 +1,53 @@
- {% load static %}
+{% load static %}
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en-us">
+
 <head>
+	<meta charset="utf-8">
+	<title>GENI PESACHAP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is the best lending site">
+	<meta name="author" content="Lee">
+	<link rel="shortcut icon" href="{% static 'app/images/favicon.png' %}" type="image/x-icon">
+	<link rel="icon" href="{% static 'app/images/favicon.png' %}" type="image/x-icon">
 
-  <!-- Basic Page Needs
-  ================================================== -->
-  <meta charset="utf-8">
-  <title>Lee Ways Clothing</title>
+{#    {% static 'app/' %}#}
 
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Best Clothing In Town">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Lee">
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-{#   {% static 'app/' %}#}
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'app/images/favicon.png' %}" />
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="{% static 'app/plugins/slick/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'app/plugins/font-awesome/fontawesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'app/plugins/font-awesome/brands.css' %}">
+	<link rel="stylesheet" href="{% static 'app/plugins/font-awesome/solid.css' %}">
 
-  <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="{% static 'app/plugins/themefisher-font/style.css' %}">
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="{% static 'app/plugins/bootstrap/css/bootstrap.min.css' %}">
-
-  <!-- Animate css -->
-  <link rel="stylesheet" href="{% static 'app/plugins/animate/animate.css' %}">
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="{% static 'app/plugins/slick/slick.css' %}">
-  <link rel="stylesheet" href="{% static 'app/plugins/slick/slick-theme.css' %}">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
-
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="{% static 'app/css/style.css' %}">
 </head>
 
-<body id="body">
+<body>
 
- {% include 'partials/header.html' %}
+{% include 'partials/header.html' %}
 
- {% block content %}
+{% block content %}
 
- {% endblock %}
+{% endblock %}
 
 {% include 'partials/footer.html' %}
-    <!-- Main jQuery -->
-    <script src="{% static 'app/plugins/jquery/dist/jquery.min.js' %}"></script>
-    <!-- Bootstrap 3.1 -->
-    <script src="{% static 'app/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
-    <!-- Bootstrap Touchpin -->
-    <script src="{% static 'app/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js' %}"></script>
-    <!-- Instagram Feed Js -->
-    <script src="{% static 'app/plugins/instafeed/instafeed.min.js' %}"></script>
-    <!-- Video Lightbox Plugin -->
-    <script src="{% static 'app/plugins/ekko-lightbox/dist/ekko-lightbox.min.js' %}"></script>
-    <!-- Count Down Js -->
-    <script src="{% static 'app/plugins/syo-timer/build/jquery.syotimer.min.js' %}"></script>
 
-    <!-- slick Carousel -->
-    <script src="{% static 'app/' %}plugins/slick/slick.min.js"></script>
-    <script src="{% static 'app/plugins/slick/slick-animation.min.js' %}"></script>
+<!-- # JS Plugins -->
+<script src="{% static 'app/plugins/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'app/plugins/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'app/plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'app/plugins/scrollmenu/scrollmenu.min.js' %}"></script>
 
-    <!-- Google Mapl -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
-    <script type="text/javascript" src="{% static 'app/plugins/google-map/gmap.js' %}"></script>
+<!-- Main Script -->
+<script src="{% static 'app/js/script.js' %}"></script>
 
-    <!-- Main Js File -->
-    <script src="{% static 'app/js/script.js' %}"></script>
-
-
-
-  </body>
-  </html>
+</body>
+</html>
